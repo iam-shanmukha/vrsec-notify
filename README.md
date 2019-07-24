@@ -7,6 +7,7 @@ When the new notification is arraived related to VR17, this will notify you and 
 
 python 3\
 Selenium WebDriver \
+BeautifulSoup\
 Tested only on Linux\
 May work on Windows too\
 
