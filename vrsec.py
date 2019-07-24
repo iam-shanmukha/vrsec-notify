@@ -18,7 +18,7 @@ sto = len(results1)
 while True:
 	print("Waiting for Results to be Declared")
 	results = soup.body.find_all(string=re.compile('.*{0}.*'.format(search)), recursive=True)
-	if len(results) > sto: #7 Results with name VR17 already present in the page, if Results arraived the name +VR17 name exists
+	if len(results) > sto:
 		subprocess.Popen(['notify-send', "Results Declared"])
 		subprocess.Popen(['notify-send', "Opening Results Page"])
 		break
