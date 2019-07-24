@@ -9,7 +9,7 @@ python 3\
 Selenium WebDriver \
 BeautifulSoup\
 Tested only on Linux\
-May work on Windows too\
+May work on Windows too
 
 # Usage
 
