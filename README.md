@@ -5,10 +5,10 @@ When the new notification is arraived related to VR17, this will notify you and 
 
 # Dependencies
 
-python 3
-Selenium WebDriver
-Tested only on Linux
-May work on Windows too
+python 3\
+Selenium WebDriver \
+Tested only on Linux\
+May work on Windows too\
 
 # Usage
 
