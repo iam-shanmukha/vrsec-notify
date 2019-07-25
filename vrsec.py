@@ -7,7 +7,7 @@ import os
 import time
 from selenium import webdriver
 
-url = "http://vrsiddhartha.ac.in/index.php/component/content/category/3"
+url = "http://www.vrsiddhartha.ac.in/index.php/component/content/category/3"
 #url = "http://shanmukhavishnu.in"
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
