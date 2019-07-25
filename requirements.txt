@@ -1,0 +1,4 @@
+BeautifulSoup
+selenium
+subproces
+requests
