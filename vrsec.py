@@ -1,3 +1,8 @@
+'''
+Created with Love By Shanmukha Vishnu
+Twitter : @iam_shanmukha
+blog: www.shanmukhavishnu.in
+'''
 from bs4 import BeautifulSoup
 import requests
 import re
