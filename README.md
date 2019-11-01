@@ -12,5 +12,5 @@ Tested only on Linux\
 May work on Windows too
 
 # Usage
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt\
 python3 vrsec.py
