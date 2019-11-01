@@ -3,6 +3,7 @@ Created with Love By Shanmukha Vishnu
 Twitter : @iam_shanmukha
 blog: www.shanmukhavishnu.in
 '''
+import tweepy
 from bs4 import BeautifulSoup
 import requests
 import re
@@ -12,6 +13,16 @@ import os
 import time
 from selenium import webdriver
 
+#######################################Twitter########################
+consumer_key ="xxxxxxxxxxxxxxx"
+consumer_secret ="xxxxxxxxxxxxxxxxx"
+access_token ="xxxxxxxxxxxxxxxxxxx"
+access_token_secret ="xxxxxxxxxxxxxxxxxxxxxxxxx"
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+###################################Twitter Data Ends ################
+####################################MAin#############################
 url = "http://www.vrsiddhartha.ac.in/examination-archives/"
 #url = "http://WWW.shanmukhavishnu.in"
 page = requests.get(url)
@@ -33,6 +44,7 @@ while True:
 	if len(results) > sto:
 		subprocess.Popen(['notify-send', "Results Declared"])
 		subprocess.Popen(['notify-send', "Opening Results Page"])
+		api.update_status(status ='Results Declared\n' + url)
 		break
 	else:
 		print("Results not yet declared")
