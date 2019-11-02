@@ -44,7 +44,7 @@ while True:
 	if len(results) > sto:
 		subprocess.Popen(['notify-send', "Results Declared"])
 		subprocess.Popen(['notify-send', "Opening Results Page"])
-		api.update_status(status ='Results Declared\n' + url)
+		api.update_status(status ='Notification on VR17 Arraived\n' + url)
 		break
 	else:
 		print("Results not yet declared")
