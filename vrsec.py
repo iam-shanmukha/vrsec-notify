@@ -9,15 +9,15 @@ import requests
 import re
 from subprocess import Popen
 import subprocess
-import os
+from os import *
 import time
 from selenium import webdriver
 
 #######################################Twitter########################
-consumer_key ="xxxxxxxxxxxxxxx"
-consumer_secret ="xxxxxxxxxxxxxxxxx"
-access_token ="xxxxxxxxxxxxxxxxxxx"
-access_token_secret ="xxxxxxxxxxxxxxxxxxxxxxxxx"
+consumer_key =environ['consumer_key']
+consumer_secret = environ['consumer_secret']
+access_token =environ['access_token']
+access_token_secret =environ['access_token_secret']
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
