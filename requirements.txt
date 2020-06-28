@@ -53,7 +53,7 @@ pacman-mirrors==4.16.4
 parse==1.15.0
 pep517==0.8.2
 pexpect==4.8.0
-Pillow==6.2.1
+Pillow>=6.2.2
 ply==3.11
 progress==1.5
 psutil==5.7.0
